@@ -1,5 +1,5 @@
 <script setup>
-import 'css-doodle';
+
 import {computed,reactive } from 'vue';
 
 
@@ -9,10 +9,6 @@ let properties = reactive({
   rotateY: 0,
   rotateZ:0
 })
-
-
-
-
 
 const box = computed(() => {
   return {
@@ -74,7 +70,5 @@ const box = computed(() => {
 </template>
 
 <style scoped>
-
-
 
 </style>

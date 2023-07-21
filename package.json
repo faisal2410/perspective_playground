@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "css-doodle": "^0.34.9",
     "vue": "^3.3.4"
   },
   "devDependencies": {
