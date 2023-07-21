@@ -23,7 +23,10 @@ const box = computed(() => {
       
   })
 
-  console.log(box.value)
+  // Note: transform:perspective(100px) rotateX(70deg) rotateY(50deg) rotateZ(60deg)
+  // https://css-tricks.com/how-css-perspective-works/
+
+
 
   const reset=()=> {
       properties.perspective = 100
