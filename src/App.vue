@@ -37,20 +37,7 @@ const box = computed(() => {
   }
 
     console.log(properties.perspective)
-  const copy=()=> {
-      const el = document.createElement('textarea')
-
-      el.setAttribute('readonly', '')
-      el.style.position = 'absolute'
-      el.style.left = '-9999px'
-      el.value = `transform: ${box.value}`
-
-      document.body.appendChild(el)
-      el.select()
-      document.execCommand('copy')
-      document.body.removeChild(el)
-    }
-
+  
 
 
 </script>
@@ -74,7 +61,7 @@ const box = computed(() => {
           <input type="range" min="-180" max="180" v-model="properties.rotateZ" />
 
           <button type="button" @click.prevent="reset">Reset</button>
-          <!-- <button type="button" @click.prevent="copy">Copy</button> -->
+       
         </div>
       </section>
       <section class="output">
