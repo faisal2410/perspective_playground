@@ -21,7 +21,10 @@ const box = computed(() => {
     }
       
       
-  })
+})
+
+
+
 
   // Note: transform:perspective(100px) rotateX(70deg) rotateY(50deg) rotateZ(60deg)
   // https://css-tricks.com/how-css-perspective-works/
@@ -60,6 +63,7 @@ const box = computed(() => {
           <input type="range" min="-180" max="180" v-model="properties.rotateZ" />
 
           <button type="button" @click.prevent="reset">Reset</button>
+         
        
         </div>
       </section>
